@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
+import MarkdownItKatex from "markdown-it-katex";
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -8,6 +9,10 @@ export default defineUserConfig({
 
   title: '自然语言处理',
   description: '自然语言处理笔记',
+
+  extendsMarkdown: (md) => {
+    md.use(MarkdownItKatex);
+  },
 
   theme: defaultTheme({
     navbar: [
@@ -19,7 +24,9 @@ export default defineUserConfig({
     sidebar: [
       {
         text: "自然语言处理笔记",
-        children: []
+        children: [
+          "/notes/word_vec"
+        ]
       },
     ]
   }),
