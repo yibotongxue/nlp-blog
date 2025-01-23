@@ -8,7 +8,7 @@ export default defineUserConfig({
   base: '/nlp-blog/',
 
   title: '自然语言处理',
-  description: '自然语言处理笔记',
+  description: '自然语言处理笔记及笔记',
 
   extendsMarkdown: (md) => {
     md.use(MarkdownItKatex);
@@ -17,18 +17,38 @@ export default defineUserConfig({
   theme: defaultTheme({
     navbar: [
       {
+        text: "Home",
+        link: '/',
+      },
+      {
+        text: "笔记",
+        link: '/notes/'
+      },
+      {
+        text: "作业",
+        link: "/hw/",
+      },
+      {
         text: "GitHub",
         link: "https://github.com/yibotongxue/nlp-blog"
-      }
-    ],
-    sidebar: [
-      {
-        text: "自然语言处理笔记",
-        children: [
-          "/notes/word_vec"
-        ]
       },
-    ]
+    ],
+    sidebar: {
+      '/notes/': [
+        {
+          text: "笔记",
+          children: [
+            "/notes/word_vec"
+          ]
+        },
+      ],
+      '/hw/': [
+        {
+          text: "作业",
+          children: []
+        }
+      ]
+    },
   }),
 
   bundler: viteBundler(),
