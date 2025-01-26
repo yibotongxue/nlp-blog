@@ -4,6 +4,7 @@ head:
     - rel: stylesheet
       href: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
 ---
+
 # 词向量
 
 这里为[cs224n](https://web.stanford.edu/class/cs224n/)第一讲的笔记，参考的中文资料为[这篇知乎文章](https://zhuanlan.zhihu.com/p/527211805)。
