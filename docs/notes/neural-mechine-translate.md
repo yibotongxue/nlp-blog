@@ -35,9 +35,9 @@ n-gram 语言模型会面临稀疏性的问题，即你需要查询的 n-gram �
 
 循环神经网络定义的语言模型简单的说就是对于一个任意长的序列，其下一个单词的概率由最后一个单词及其之前的单词（包含最后一个单词）共同决定，而之前的单词（包括最后一个单词）由隐状态表示，隐状态的计算由当前的单词和上一个隐状态共同决定，即递归的方式。
 
-具体的理解，可以参考[文章](https://juejin.cn/post/7095181203929563173)中的图片
+具体的理解，可以参考[课件](https://web.stanford.edu/class/cs224n/slides_w25/cs224n-2025-lecture05-rnnlm.pdf)第27页（侵删）
 
-![rnn](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/be5f20abf3f54ff699d9cae5838e52ce~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp)
+![rnn](images/image.png)
 
 即对于输入序列的每一个单词，我们通过词嵌入得到其向量表示，同时我们将这个向量与上一个隐状态拼接起来，通过一个线性层得到当前的隐状态，对于第一个隐状态，一般由设计者自行初始化，可以全为 $0$ ，TensorFlow 和 Pytorch似乎都是这样做的，参考[知乎回答](https://www.zhihu.com/question/384725029/answer/1124300180)。对于输出的概率分布，一般采用最后一个状态通过一个线性层得到。
 
