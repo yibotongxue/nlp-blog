@@ -39,7 +39,8 @@ export default defineUserConfig({
           text: "笔记",
           children: [
             "/notes/word_vec",
-            "/notes/dependency-parsing"
+            "/notes/dependency-parsing",
+            "/notes/neural-mechine-translate",
           ]
         },
       ],
