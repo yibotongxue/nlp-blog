@@ -37,7 +37,7 @@ n-gram 语言模型会面临稀疏性的问题，即你需要查询的 n-gram �
 
 具体的理解，可以参考[课件](https://web.stanford.edu/class/cs224n/slides_w25/cs224n-2025-lecture05-rnnlm.pdf)第27页（侵删）
 
-![rnn](images/image.png)
+![rnn](images/rnn.png)
 
 即对于输入序列的每一个单词，我们通过词嵌入得到其向量表示，同时我们将这个向量与上一个隐状态拼接起来，通过一个线性层得到当前的隐状态，对于第一个隐状态，一般由设计者自行初始化，可以全为 $0$ ，TensorFlow 和 Pytorch似乎都是这样做的，参考[知乎回答](https://www.zhihu.com/question/384725029/answer/1124300180)。对于输出的概率分布，一般采用最后一个状态通过一个线性层得到。
 

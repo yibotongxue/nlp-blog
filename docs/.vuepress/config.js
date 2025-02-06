@@ -41,6 +41,7 @@ export default defineUserConfig({
             "/notes/word_vec",
             "/notes/dependency-parsing",
             "/notes/neural-mechine-translate",
+            "/notes/attention-and-transformer",
           ]
         },
       ],
