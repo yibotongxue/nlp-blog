@@ -42,6 +42,7 @@ export default defineUserConfig({
             "/notes/dependency-parsing",
             "/notes/neural-mechine-translate",
             "/notes/attention-and-transformer",
+            "/notes/pretraining",
           ]
         },
       ],
