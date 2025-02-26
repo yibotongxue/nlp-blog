@@ -4,7 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import MarkdownItKatex from "markdown-it-katex";
 
 export default defineUserConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
   base: '/nlp-blog/',
 
   title: '自然语言处理',
@@ -45,6 +45,7 @@ export default defineUserConfig({
             "/notes/pretraining",
             "/notes/In-Context-Learning",
             "/notes/scaling-law-and-quantization",
+            "/notes/wsd",
           ]
         },
       ],
