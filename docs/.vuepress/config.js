@@ -44,6 +44,7 @@ export default defineUserConfig({
             "/notes/attention-and-transformer",
             "/notes/pretraining",
             "/notes/In-Context-Learning",
+            "/notes/scaling-law-and-quantization",
           ]
         },
       ],
