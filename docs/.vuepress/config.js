@@ -46,6 +46,7 @@ export default defineUserConfig({
             "/notes/In-Context-Learning",
             "/notes/scaling-law-and-quantization",
             "/notes/wsd",
+            "/notes/moe",
           ]
         },
       ],
