@@ -47,6 +47,7 @@ export default defineUserConfig({
             "/notes/scaling-law-and-quantization",
             "/notes/wsd",
             "/notes/moe",
+            "/notes/peft",
           ]
         },
       ],
