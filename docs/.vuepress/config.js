@@ -48,6 +48,7 @@ export default defineUserConfig({
             "/notes/wsd",
             "/notes/moe",
             "/notes/peft",
+            "/notes/rlhf",
           ]
         },
       ],
